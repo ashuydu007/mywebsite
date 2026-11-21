@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divines Favor Rentals | Direct Homestay, Self-Drive & City Concierge</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest: {
+              950: '#071510',
+              900: '#0d221a',
+              800: '#143327',
+              700: '#1b4737',
+              600: '#26634d',
+            },
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar & Hero Styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0d221a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #059669;
+      border-radius: 9999px;
+    }
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(13, 34, 26, 0.82), rgba(7, 21, 16, 0.96)), 
+                        url('https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Sticky Top Clean White Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Left: Logo & Direct Host Subtitle -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-600/20 flex-shrink-0">
+          <i class="fas fa-home text-lg"></i>
+        </div>
+        <div>
+          <div class="flex items-baseline gap-1">
+            <h1 class="text-xl font-extrabold text-slate-900 tracking-tight leading-none">Divines Favor</h1>
+            <span class="text-xl font-extrabold text-emerald-600 leading-none">Rentals</span>
+          </div>
+          <p class="text-[10px] font-bold tracking-wider uppercase text-emerald-600 mt-0.5">DIRECT HOST BOOKING • ZERO FEES</p>
+        </div>
+      </div>
+
+      <!-- Right: WhatsApp Host Contact Button -->
+      <a href="https://wa.me/919144455888?text=Hello%20Ashish,%20I%20would%20like%20to%20inquire%20about%20Divines%20Favor%20bookings." 
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Contact Host on WhatsApp"
+         class="w-10 h-10 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-center text-emerald-600 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all duration-200 shadow-sm">
+        <i class="fab fa-whatsapp text-xl"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section: Moody Cabin & Deep Forest Overlay -->
+  <section class="hero-bg text-white pt-8 pb-16 px-4 md:px-8 border-b border-forest-800">
+    <div class="max-w-3xl mx-auto space-y-5">
+      
+      <!-- Frosted Glass Pill Badge -->
+      <div class="inline-flex items-center gap-2 bg-emerald-950/60 backdrop-blur-md border border-emerald-500/30 text-emerald-300 text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-inner">
+        <i class="fas fa-shield-alt text-emerald-400"></i>
+        <span>DIRECT HOST PLATFORM • ZERO AIRBNB SERVICE COMMISSIONS</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.15]">
+        Your Complete Stay, Self–Drive & Local Companion in One Place.
+      </h2>
+
+      <!-- Subparagraph -->
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
+        Skip third-party middleman markup. Book our peaceful homestay, reserve self-drive cars or bikes delivered to your doorstep, and hire standard on-call or 1-on-1 personal local guides for your trip.
+      </p>
+
+      <!-- 2x2 Translucent Feature Grid (From Reference UI) -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 gap-3 pt-4">
+        <!-- Feature 1: Homestay -->
+        <div class="bg-forest-900/60 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-emerald-950/80 rounded-xl flex items-center justify-center text-emerald-400 text-base border border-emerald-500/20 flex-shrink-0">
+            <i class="fas fa-home"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-xs sm:text-sm">Cozy Homestay</h3>
+            <p class="text-[11px] text-slate-300 font-medium">From ₹1,000/night</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Self-Drive Cars -->
+        <div class="bg-forest-900/60 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-emerald-950/80 rounded-xl flex items-center justify-center text-emerald-400 text-base border border-emerald-500/20 flex-shrink-0">
+            <i class="fas fa-car"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-xs sm:text-sm">Self–Drive Cars</h3>
+            <p class="text-[11px] text-slate-300 font-medium">Sedan & SUV Options</p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Bikes & Scooty -->
+        <div class="bg-forest-900/60 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-emerald-950/80 rounded-xl flex items-center justify-center text-emerald-400 text-base border border-emerald-500/20 flex-shrink-0">
+            <i class="fas fa-motorcycle"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-xs sm:text-sm">Bikes & Scooty</h3>
+            <p class="text-[11px] text-slate-300 font-medium">From ₹350/day</p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Personal Assistant -->
+        <div class="bg-forest-900/60 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+          <div class="w-10 h-10 bg-emerald-950/80 rounded-xl flex items-center justify-center text-emerald-400 text-base border border-emerald-500/20 flex-shrink-0">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-xs sm:text-sm">Personal Assistant</h3>
+            <p class="text-[11px] text-slate-300 font-medium">On-Call or In-Person</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Overlapping Sheet Card: Flexible Modular Booking -->
+  <main class="max-w-4xl mx-auto px-3 sm:px-4 -mt-8 relative z-20 pb-16">
+    <div class="bg-white rounded-[2rem] shadow-2xl border border-slate-200/80 p-5 sm:p-8 md:p-10 space-y-8">
+
+      <!-- Section Title & Bundle Trigger Banner -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-6">
+        <div>
+          <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Customizable Travel Experience</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-0.5">Flexible Modular Booking</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Pick any individual service or bundle all four to unlock an instant 10% discount.</p>
+        </div>
+        <button onclick="selectAllBundle()" class="self-start md:self-auto bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+          <i class="fas fa-sparkles text-emerald-600"></i> Select All-in-One Bundle (Save 10%)
+        </button>
+      </div>
+
+      <!-- Modular Service Selection Form -->
+      <div class="space-y-5">
+
+        <!-- 1. Direct Homestay -->
+        <div class="border border-slate-200 hover:border-emerald-500/50 rounded-2xl p-4 sm:p-5 transition bg-slate-50/50">
+          <div class="flex items-center justify-between mb-3">
+            <label class="flex items-center gap-3 cursor-pointer select-none">
+              <input type="checkbox" id="chk-stay" checked onchange="calculateTotal()" class="w-5 h-5 accent-emerald-600 rounded cursor-pointer" />
+              <span class="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
+                <i class="fas fa-home text-emerald-600 text-sm"></i> Direct Homestay Accommodation
+              </span>
+            </label>
+            <span class="text-[11px] font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Direct Host Rate</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Room Category</label>
+              <select id="stay-type" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option value="1000">Standard Cozy Room — ₹1,000 / night</option>
+                <option value="1500">Deluxe Comfort Room — ₹1,500 / night</option>
+                <option value="2000">Family Suite / Entire Unit — ₹2,000 / night</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Number of Nights</label>
+              <input type="number" id="stay-nights" value="2" min="1" max="30" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Self-Drive Car Rental -->
+        <div class="border border-slate-200 hover:border-emerald-500/50 rounded-2xl p-4 sm:p-5 transition bg-slate-50/50">
+          <div class="flex items-center justify-between mb-3">
+            <label class="flex items-center gap-3 cursor-pointer select-none">
+              <input type="checkbox" id="chk-car" onchange="toggleDLNotice(); calculateTotal();" class="w-5 h-5 accent-emerald-600 rounded cursor-pointer" />
+              <span class="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
+                <i class="fas fa-car text-emerald-600 text-sm"></i> Self-Drive Car Rental
+              </span>
+            </label>
+            <span class="text-[11px] font-semibold text-slate-500">Physical DL Verification</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Vehicle Type</label>
+              <select id="car-type" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option value="2000">Sedan (Dzire / Etios) — ₹2,000 / day</option>
+                <option value="4000">SUV (Ertiga / Innova) — ₹4,000 / day</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Rental Duration (Days)</label>
+              <input type="number" id="car-days" value="1" min="1" max="30" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Self-Drive Bike / Scooty -->
+        <div class="border border-slate-200 hover:border-emerald-500/50 rounded-2xl p-4 sm:p-5 transition bg-slate-50/50">
+          <div class="flex items-center justify-between mb-3">
+            <label class="flex items-center gap-3 cursor-pointer select-none">
+              <input type="checkbox" id="chk-bike" onchange="toggleDLNotice(); calculateTotal();" class="w-5 h-5 accent-emerald-600 rounded cursor-pointer" />
+              <span class="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
+                <i class="fas fa-motorcycle text-emerald-600 text-sm"></i> Self-Drive Bike / Scooty
+              </span>
+            </label>
+            <span class="text-[11px] font-semibold text-slate-500">Helmets Included</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Two-Wheeler Option</label>
+              <select id="bike-type" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option value="350">Scooty (Activa / Jupiter) — ₹350 / day</option>
+                <option value="500">Bike (Pulsar / Royal Enfield) — ₹500 / day</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Rental Duration (Days)</label>
+              <input type="number" id="bike-days" value="1" min="1" max="30" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic In-Person Driving License Verification Notice -->
+        <div id="dl-notice" class="hidden bg-emerald-50 border border-emerald-200 rounded-2xl p-4 flex items-start gap-3">
+          <div class="w-9 h-9 bg-emerald-600 text-white rounded-xl flex items-center justify-center text-sm flex-shrink-0 mt-0.5 shadow-sm">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold text-emerald-950 uppercase tracking-wide">In-Person Driving License Verification</h4>
+            <p class="text-xs text-emerald-900 mt-0.5 leading-relaxed">
+              No online document upload required! Please carry your <strong>original Driving License</strong> and a <strong>Government Photo ID</strong> (Aadhaar or Passport) to present in person upon check-in / vehicle handover.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Personal City Assistance -->
+        <div class="border border-slate-200 hover:border-emerald-500/50 rounded-2xl p-4 sm:p-5 transition bg-slate-50/50">
+          <div class="flex items-center justify-between mb-3">
+            <label class="flex items-center gap-3 cursor-pointer select-none">
+              <input type="checkbox" id="chk-assist" onchange="calculateTotal()" class="w-5 h-5 accent-emerald-600 rounded cursor-pointer" />
+              <span class="font-bold text-slate-900 text-base sm:text-lg flex items-center gap-2">
+                <i class="fas fa-headset text-emerald-600 text-sm"></i> Personal City Assistance
+              </span>
+            </label>
+            <span class="text-[11px] font-semibold bg-blue-100 text-blue-800 px-2.5 py-0.5 rounded-full">Local Assistant</span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Assistance Mode</label>
+              <select id="assist-type" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option value="350">Virtual On-Call / Message City Guide — ₹350 / day</option>
+                <option value="1500">Dedicated 1-on-1 Local Companion — ₹1,500 / day</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-500 mb-1">Days Needed</label>
+              <input type="number" id="assist-days" value="1" min="1" max="30" onchange="calculateTotal()" class="w-full bg-white border border-slate-300 rounded-xl p-2.5 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-emerald-500 focus:outline-none" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Checkout Summary & Guest Information -->
+      <div class="bg-forest-950 text-white rounded-2xl p-5 sm:p-7 space-y-5 border border-forest-800 shadow-xl">
+        <div class="flex items-center justify-between border-b border-forest-800 pb-3">
+          <h3 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+            <i class="fas fa-receipt text-emerald-400"></i> Booking & Pricing Breakdown
+          </h3>
+          <span id="bundle-badge" class="hidden bg-emerald-500 text-slate-950 font-extrabold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wider">
+            10% Bundle Discount Applied
+          </span>
+        </div>
+
+        <!-- Selected Items Summary List -->
+        <div id="summary-items" class="space-y-2 text-xs sm:text-sm text-slate-300 font-normal"></div>
+
+        <!-- Refundable Deposit Notice -->
+        <div id="deposit-notice" class="hidden bg-forest-900 border border-emerald-500/30 p-3 rounded-xl text-xs text-emerald-200 flex items-center justify-between">
+          <span><i class="fas fa-shield-alt text-emerald-400 mr-1.5"></i> Refundable Vehicle Deposit at Pickup:</span>
+          <span id="deposit-amount" class="font-bold text-white">₹0</span>
+        </div>
+
+        <!-- Total Calculation -->
+        <div class="border-t border-forest-800 pt-3 flex justify-between items-center text-lg sm:text-2xl font-black text-white">
+          <span>Total Rental Amount</span>
+          <span id="total-amount" class="text-emerald-400">₹2,000</span>
+        </div>
+
+        <!-- Guest Contact Form -->
+        <div class="grid sm:grid-cols-2 gap-3 pt-2">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Guest Full Name *</label>
+            <input type="text" id="guest-name" placeholder="e.g. Vikram Sharma" class="w-full bg-forest-900 border border-forest-700 text-white placeholder-slate-500 rounded-xl p-3 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">Phone / WhatsApp Number *</label>
+            <input type="tel" id="guest-phone" placeholder="e.g. +91 9876543210" class="w-full bg-forest-900 border border-forest-700 text-white placeholder-slate-500 rounded-xl p-3 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none" />
+          </div>
+        </div>
+
+        <!-- Rental Policy & Terms Checkbox -->
+        <div class="space-y-2">
+          <label class="flex items-start gap-2.5 cursor-pointer select-none">
+            <input type="checkbox" id="chk-terms" class="w-4 h-4 accent-emerald-500 rounded mt-0.5 cursor-pointer" />
+            <span class="text-xs text-slate-300 leading-normal">
+              I agree to the <strong>Vehicle Rental Policy & Refundable Security Deposit terms</strong>. 
+              <button type="button" onclick="openPolicyModal()" class="text-emerald-400 underline hover:text-emerald-300">View Rules</button>
+            </span>
+          </label>
+        </div>
+
+        <!-- Validation Error Box -->
+        <div id="validation-error" class="hidden bg-red-950/80 border border-red-500/50 text-red-200 text-xs p-3 rounded-xl font-medium"></div>
+
+        <!-- Action Button -->
+        <button onclick="confirmBooking()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black py-4 rounded-xl text-base transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fas fa-check-circle"></i> Confirm Direct Booking
+        </button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Deep Forest Footer with Host Verification Card -->
+  <footer class="bg-forest-950 text-slate-300 py-12 px-4 border-t border-forest-800">
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white text-sm">
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="text-xl font-extrabold text-white">Divines Favor Rentals</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Direct host booking platform offering zero Airbnb service fees for peaceful homestays, self-drive vehicles, and local city guides.
+          </p>
+        </div>
+
+        <!-- Verified Host Card -->
+        <div class="bg-forest-900 border border-forest-800 p-4 rounded-2xl space-y-2">
+          <div class="flex items-center gap-3 border-b border-forest-800 pb-2.5">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 font-bold text-white flex items-center justify-center text-sm shadow-sm">
+              AY
+            </div>
+            <div>
+              <p class="font-bold text-white text-sm">Ashish Yadav</p>
+              <p class="text-[11px] text-emerald-400 font-medium"><i class="fas fa-shield-check mr-1"></i> Verified Direct Property & Rental Host</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-xs pt-1">
+            <a href="tel:+919144455888" class="text-slate-300 hover:text-white flex items-center gap-2">
+              <i class="fas fa-phone text-emerald-400"></i> +91 9144455888
+            </a>
+            <a href="mailto:ay982654@gmail.com" class="text-slate-300 hover:text-white flex items-center gap-2 truncate">
+              <i class="fas fa-envelope text-emerald-400"></i> ay982654@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-xs text-slate-500 border-t border-forest-900 pt-6">
+        © 2026 Divines Favor Rentals. Managed directly by Ashish Yadav (+91 9144455888 | ay982654@gmail.com).
+      </div>
+    </div>
+  </footer>
+
+  <!-- Printable Booking Receipt Modal -->
+  <div id="receipt-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200 p-6 space-y-4">
+      <div class="flex justify-between items-center border-b pb-3">
+        <div class="flex items-center gap-2">
+          <span class="bg-emerald-100 text-emerald-800 p-2 rounded-xl text-sm"><i class="fas fa-check-circle text-emerald-600"></i></span>
+          <h3 class="text-lg font-bold text-slate-900">Booking Confirmation Receipt</h3>
+        </div>
+        <button onclick="closeReceiptModal()" class="text-slate-400 hover:text-slate-600 p-1"><i class="fas fa-times text-lg"></i></button>
+      </div>
+
+      <div id="printable-receipt" class="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-3 text-xs text-slate-700">
+        <div class="flex justify-between items-center border-b border-slate-200 pb-2">
+          <div>
+            <p class="font-extrabold text-slate-900 text-sm">Divines Favor Rentals</p>
+            <p class="text-[11px] text-slate-500">Host: Ashish Yadav (+91 9144455888)</p>
+          </div>
+          <span id="receipt-ref" class="bg-emerald-100 text-emerald-900 font-mono font-bold px-2.5 py-1 rounded-md text-[11px]"></span>
+        </div>
+
+        <div class="space-y-1">
+          <p><strong>Guest Name:</strong> <span id="receipt-name"></span></p>
+          <p><strong>Phone / WhatsApp:</strong> <span id="receipt-phone"></span></p>
+          <p><strong>Receipt Date:</strong> <span id="receipt-date"></span></p>
+        </div>
+
+        <div class="border-t border-slate-200 pt-2 space-y-1">
+          <p class="font-semibold text-slate-900">Booked Services:</p>
+          <div id="receipt-services" class="space-y-1 pl-1"></div>
+        </div>
+
+        <div class="border-t border-slate-200 pt-2 flex justify-between font-bold text-slate-900 text-sm">
+          <span>Total Payable:</span>
+          <span id="receipt-total" class="text-emerald-700"></span>
+        </div>
+
+        <div id="receipt-deposit-box" class="hidden bg-emerald-50 border border-emerald-200 p-2.5 rounded-lg text-[11px] text-emerald-950 font-medium">
+          <i class="fas fa-shield-alt mr-1 text-emerald-600"></i> Refundable Deposit at Pickup: <span id="receipt-deposit" class="font-bold"></span>
+        </div>
+
+        <div id="receipt-dl-warning" class="hidden bg-slate-200/70 p-2 rounded-lg text-[11px] text-slate-800">
+          <i class="fas fa-id-card mr-1 text-emerald-700"></i> Present original Driving License & Govt ID at check-in / vehicle pickup.
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-2 pt-1">
+        <button onclick="printReceipt()" class="w-full sm:w-1/2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-1.5 border border-slate-300">
+          <i class="fas fa-print"></i> Print Receipt
+        </button>
+        <a id="receipt-wa-btn" href="#" target="_blank" class="w-full sm:w-1/2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-1.5 shadow-md">
+          <i class="fab fa-whatsapp"></i> Confirm on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Policy Modal -->
+  <div id="policy-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl border border-slate-200 p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center border-b pb-3">
+        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <i class="fas fa-file-contract text-emerald-600"></i> Vehicle Rental & Deposit Policy
+        </h3>
+        <button onclick="closePolicyModal()" class="text-slate-400 hover:text-slate-600 p-1"><i class="fas fa-times text-lg"></i></button>
+      </div>
+
+      <div class="space-y-3 text-xs text-slate-600 leading-relaxed">
+        <div class="bg-emerald-50 p-3 rounded-xl border border-emerald-200">
+          <h4 class="font-bold text-emerald-950 text-xs mb-1"><i class="fas fa-id-card text-emerald-600 mr-1.5"></i>1. Driving License Verification</h4>
+          <p>Primary renter must present an original valid Indian Driving License (LMV for Cars, MCWG for Two-Wheelers) and a Govt Photo ID (Aadhaar or Passport) in person upon vehicle delivery.</p>
+        </div>
+
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-xs mb-1"><i class="fas fa-shield-alt text-emerald-600 mr-1.5"></i>2. Security Deposit & Returns</h4>
+          <p>A refundable deposit (₹1,000 for Two-Wheelers / ₹3,000 for Cars) is collected in cash or UPI at vehicle handover and refunded immediately upon undamaged return.</p>
+        </div>
+
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-xs mb-1"><i class="fas fa-gas-pump text-emerald-600 mr-1.5"></i>3. Fuel Policy</h4>
+          <p>Vehicles are provided with sufficient fuel for initial travel. Please return with equivalent fuel level to avoid refueling charges.</p>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <button onclick="acceptPolicyFromModal()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs transition">
+          I Understand & Agree
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script>
+    function toggleDLNotice() {
+      const needsDL = document.getElementById('chk-car').checked || document.getElementById('chk-bike').checked;
+      document.getElementById('dl-notice').classList.toggle('hidden', !needsDL);
+    }
+
+    function openPolicyModal() {
+      document.getElementById('policy-modal').classList.remove('hidden');
+    }
+
+    function closePolicyModal() {
+      document.getElementById('policy-modal').classList.add('hidden');
+    }
+
+    function closeReceiptModal() {
+      document.getElementById('receipt-modal').classList.add('hidden');
+    }
+
+    function acceptPolicyFromModal() {
+      document.getElementById('chk-terms').checked = true;
+      closePolicyModal();
+    }
+
+    function selectAllBundle() {
+      ['chk-stay', 'chk-car', 'chk-bike', 'chk-assist'].forEach(id => document.getElementById(id).checked = true);
+      toggleDLNotice();
+      calculateTotal();
+    }
+
+    function calculateTotal() {
+      let total = 0, count = 0, html = '', deposit = 0;
+      const hasCar = document.getElementById('chk-car').checked;
+      const hasBike = document.getElementById('chk-bike').checked;
+
+      if (document.getElementById('chk-stay').checked) {
+        const cost = Number(document.getElementById('stay-type').value) * Number(document.getElementById('stay-nights').value);
+        total += cost; count++;
+        html += `<div class="flex justify-between"><span>Homestay (${document.getElementById('stay-nights').value} nights)</span><span class="font-bold text-white">₹${cost.toLocaleString()}</span></div>`;
+      }
+      if (hasCar) {
+        const cost = Number(document.getElementById('car-type').value) * Number(document.getElementById('car-days').value);
+        total += cost; count++;
+        deposit += 3000;
+        html += `<div class="flex justify-between"><span>Self-Drive Car (${document.getElementById('car-days').value} days)</span><span class="font-bold text-white">₹${cost.toLocaleString()}</span></div>`;
+      }
+      if (hasBike) {
+        const cost = Number(document.getElementById('bike-type').value) * Number(document.getElementById('bike-days').value);
+        total += cost; count++;
+        deposit += 1000;
+        html += `<div class="flex justify-between"><span>Two-Wheeler (${document.getElementById('bike-days').value} days)</span><span class="font-bold text-white">₹${cost.toLocaleString()}</span></div>`;
+      }
+      if (document.getElementById('chk-assist').checked) {
+        const cost = Number(document.getElementById('assist-type').value) * Number(document.getElementById('assist-days').value);
+        total += cost; count++;
+        html += `<div class="flex justify-between"><span>Personal Assistance (${document.getElementById('assist-days').value} days)</span><span class="font-bold text-white">₹${cost.toLocaleString()}</span></div>`;
+      }
+
+      const depositNotice = document.getElementById('deposit-notice');
+      if (deposit > 0) {
+        depositNotice.classList.remove('hidden');
+        document.getElementById('deposit-amount').innerText = '₹' + deposit.toLocaleString();
+      } else {
+        depositNotice.classList.add('hidden');
+      }
+
+      const isBundle = count === 4;
+      document.getElementById('bundle-badge').classList.toggle('hidden', !isBundle);
+      if (isBundle) total = Math.round(total * 0.9);
+      
+      document.getElementById('summary-items').innerHTML = html || '<p class="text-slate-400 italic">Please check at least one service above.</p>';
+      document.getElementById('total-amount').innerText = '₹' + total.toLocaleString();
+      document.getElementById('validation-error').classList.add('hidden');
+    }
+
+    function confirmBooking() {
+      const errBox = document.getElementById('validation-error');
+      errBox.classList.add('hidden');
+
+      const name = document.getElementById('guest-name').value.trim();
+      const phone = document.getElementById('guest-phone').value.trim();
+      const hasVehicle = document.getElementById('chk-car').checked || document.getElementById('chk-bike').checked;
+      const termsAccepted = document.getElementById('chk-terms').checked;
+
+      if (!name || !phone) {
+        errBox.innerText = 'Please fill out your Full Name and Phone / WhatsApp number to proceed.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+
+      if (!termsAccepted) {
+        errBox.innerText = 'Please accept the Rental Terms & Security Deposit Policy to continue.';
+        errBox.classList.remove('hidden');
+        return;
+      }
+
+      const total = document.getElementById('total-amount').innerText;
+      const depositText = document.getElementById('deposit-notice').classList.contains('hidden') ? 'N/A' : document.getElementById('deposit-amount').innerText;
+      const ref = 'DF-2026-' + Math.floor(1000 + Math.random() * 9000);
+
+      // Populate Receipt Modal
+      document.getElementById('receipt-ref').innerText = ref;
+      document.getElementById('receipt-name').innerText = name;
+      document.getElementById('receipt-phone').innerText = phone;
+      document.getElementById('receipt-date').innerText = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+      document.getElementById('receipt-services').innerHTML = document.getElementById('summary-items').innerHTML;
+      document.getElementById('receipt-total').innerText = total;
+
+      if (depositText !== 'N/A') {
+        document.getElementById('receipt-deposit-box').classList.remove('hidden');
+        document.getElementById('receipt-deposit').innerText = depositText;
+      } else {
+        document.getElementById('receipt-deposit-box').classList.add('hidden');
+      }
+
+      document.getElementById('receipt-dl-warning').classList.toggle('hidden', !hasVehicle);
+
+      let msgText = `Hello Ashish Yadav, I would like to confirm my Divines Favor booking.\n\n` +
+        `🔖 Booking Ref: ${ref}\n` +
+        `👤 Guest Name: ${name}\n` +
+        `📞 Phone: ${phone}\n` +
+        `💰 Total Payable: ${total}\n` +
+        `🛡️ Refundable Deposit: ${depositText}\n` +
+        `📋 Terms Accepted: YES`;
+
+      if (hasVehicle) {
+        msgText += `\n🪪 Note: I will present my original valid Driving License & Govt ID at check-in.`;
+      }
+
+      const waUrl = `https://wa.me/919144455888?text=${encodeURIComponent(msgText)}`;
+      document.getElementById('receipt-wa-btn').href = waUrl;
+
+      // Display Receipt Modal
+      document.getElementById('receipt-modal').classList.remove('hidden');
+    }
+
+    function printReceipt() {
+      const content = document.getElementById('printable-receipt').innerHTML;
+      const printWin = window.open('', '_blank', 'width=650,height=650');
+      printWin.document.write(`
+        <html>
+          <head>
+            <title>Divines Favor Rentals - Booking Receipt</title>
+            <script src="https://cdn.tailwindcss.com"><\/script>
+          </head>
+          <body class="p-8 font-sans bg-white">
+            <div class="max-w-md mx-auto border p-6 rounded-2xl">
+              ${content}
+            </div>
+          </body>
+        </html>
+      `);
+      printWin.document.close();
+      printWin.focus();
+      setTimeout(() => { printWin.print(); printWin.close(); }, 500);
+    }
+
+    // Initial total computation on window load
+    window.onload = function() {
+      calculateTotal();
+    };
+  </script>
+</body>
+</html>
